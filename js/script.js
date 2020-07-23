@@ -38,7 +38,7 @@ var tentativi = max - bombe.length;
 var arrayUtente = [];
 var numeroUtente;
 var trovato = false;
-while (arrayUtente.length < 5 && trovato == false) {
+while (arrayUtente.length < tentativi && trovato == false) {
     numeroUtente = parseInt(prompt("Inserisci un numero da 1 a 100"));
     if (trovaElemento(arrayUtente, numeroUtente) == false) {
         arrayUtente.push(numeroUtente);
